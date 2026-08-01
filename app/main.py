@@ -111,7 +111,7 @@ app = FastAPI(title="Policy Compliance Checker", version="1.0.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://iridescent-lollipop-e693d7.netlify.app/",
+        "https://iridescent-lollipop-e693d7.netlify.app",
         "http://localhost:5173",  # Local development
           # Production frontend
     ],
