@@ -116,7 +116,6 @@ app.add_middleware(
           # Production frontend
     ],
     allow_origin_regex=r"https://([a-zA-Z0-9-]+--)?iridescent-lollipop-e693d7\.netlify\.app",
-    allow_origins=allowed_origins,
     # allow_methods=["*"],
     # allow_headers=["*"],
     allow_methods=[
