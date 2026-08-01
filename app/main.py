@@ -3428,7 +3428,7 @@ def get_abac_simulation_users(
 
 ALLOWED_ORIGINS = [
     # Production Netlify frontend (no trailing slash)
-    "https://iridescent-lollipop-e693d7.netlify.app",
+    "https://nexuszenithproject.netlify.app",
 
     # Local Vite development
     "http://localhost:5173",
