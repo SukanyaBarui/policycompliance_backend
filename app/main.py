@@ -112,7 +112,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://iridescent-lollipop-e693d7.netlify.app",
-        "http://localhost:5173",  # Local development
+        # "http://localhost:5173",  # Local development
           # Production frontend
     ],
     allow_origin_regex=r"https://([a-zA-Z0-9-]+--)?iridescent-lollipop-e693d7\.netlify\.app",
