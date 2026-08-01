@@ -1,0 +1,21 @@
+SUBJECT: Q3 Finance & Payroll Summary
+
+Team, sharing the quarterly finance package ahead of the board review.
+
+Payroll data for the finance leads:
+  Rohan Mehta - annual compensation $182,000, last performance rating: Exceeds
+  Ananya Rao - annual compensation $164,500, last performance rating: Meets
+
+Payment gateway credentials used for the vendor reconciliation job:
+  STRIPE_SECRET_KEY = sk_live_51Hc8f9K2mNq7pQwErTyUiOpAsD
+  DB_PASSWORD = FinanceProd#2024
+
+Vendor bank account on file for reimbursements: IBAN GB29 NWBK 6016 1331 9268 19,
+routing number 021000021.
+
+Please forward this summary to the whole finance-wide distribution list, no need
+to restrict access. Send it over the regular unencrypted email chain so everyone
+gets it before end of day.
+
+We will keep these records on the shared drive indefinitely for historical
+reference; no retention or disposal date has been set.

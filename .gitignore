@@ -1,0 +1,35 @@
+# Leave blank to run in demo mode (no LLM, fully deterministic pipeline).
+OPENAI_API_KEY=
+
+AZURE_OPENAI_KEY=
+GROQ_API_KEY=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
+# Model tiers (only used when a key is set):
+TRIAGE_MODEL=llama-3.1-8b-instant
+ANALYSIS_MODEL=openai/gpt-oss-20b
+# RAG grounding threshold (cosine sim floor for transformer embeddings):
+GROUNDING_THRESHOLD=0.35
+
+# =====================================================
+# JWT Authentication
+# =====================================================
+
+JWT_SECRET=REPLACE_WITH_A_RANDOM_64_CHARACTER_SECRET
+JWT_ALGORITHM=HS256
+
+# =====================================================
+# SMTP (Gmail)
+# =====================================================
+
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=teamcomplianceai@gmail.com
+SMTP_PASSWORD=yggi zlth wurk kwwo
+SMTP_FROM=teamcomplianceai@gmail.com
+
+# =====================================================
+# Google OAuth
+# =====================================================
+
+GOOGLE_CLIENT_ID=560106884265-1stmnfg7nt7lklerm0dishu4nvlus5e3.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+GOOGLE_REDIRECT_URI=http://localhost:8000/auth/google/callback

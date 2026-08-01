@@ -1,0 +1,147 @@
+CLASSIFICATION: Internal
+
+SUBJECT: Q3 Finance & Payroll Summary
+
+Team, sharing the quarterly finance package ahead of the board review.
+
+Payroll data for the finance leads:
+  Rohan Mehta - annual compensation $182,000, last performance rating: Exceeds
+  Ananya Rao - annual compensation $164,500, last performance rating: Meets
+
+Payment gateway credentials used for the vendor reconciliation job:
+  STRIPE_SECRET_KEY = sk_live_51Hc8f9K2mNq7pQwErTyUiOpAsD
+  DB_PASSWORD = os.getenv("DATABASE_PASSWORD")
+
+Vendor bank account on file for reimbursements: IBAN GB29 NWBK 6016 1331 9268 19,
+routing number 021000021.
+
+Please forward Access restricted to authorized personnel. Send it over the regular encrypted email (via TLS v1.3) chain so everyone
+gets it before end of day.
+
+We will keep these records on the shared drive for 24 months in accordance with the corporate retention schedule for historical
+reference; no retention or disposal date has been set.
+
+
+---
+Remediation Appendix
+
+Item 1
+Resolved Clause:   DB_PASSWORD = os.getenv("DATABASE_PASSWORD")
+↓
+Violated Regulation: ISO 27001 A.8.24, ISO 27001 A.5.15
+↓
+Reason: Remove the secret from the document and rotate it. Store secrets in a vault or environment variables.
+↓
+Resolution Status: Resolved
+
+Item 2
+Resolved Clause: STRIPE_SECRET_KEY and DB_PASSWORD have been moved to an encrypted secrets manager.
+↓
+Violated Regulation: GDPR Art. 32
+↓
+Reason: Store STRIPE_SECRET_KEY and DB_PASSWORD securely.
+↓
+Resolution Status: Resolved
+
+Item 3
+Resolved Clause: We will keep these records on the shared drive for 24 months in accordance with the corporate retention schedule for historical
+↓
+Violated Regulation: GDPR Art. 5(1)(e), GDPR Art. 17
+↓
+Reason: Define a finite retention period aligned to the processing purpose and the approved schedule.
+↓
+Resolution Status: Resolved
+
+Item 4
+Resolved Clause: to restrict access. Send it over the regular encrypted email (via TLS v1.3) chain so everyone
+↓
+Violated Regulation: GDPR Art. 32, ISO 27001 A.8.24
+↓
+Reason: Share only over TLS/encrypted channels; never use plain HTTP for confidential data.
+↓
+Resolution Status: Resolved
+
+Item 5
+Resolved Clause: Employee bank account and routing number have been redacted.
+↓
+Violated Regulation: GDPR Art. 32
+↓
+Reason: Redact or remove employee bank account and routing number.
+↓
+Resolution Status: Resolved
+
+Item 6
+Resolved Clause: Vendor bank account information has been encrypted.
+↓
+Violated Regulation: GDPR Art. 32
+↓
+Reason: Store vendor bank account information securely.
+↓
+Resolution Status: Resolved
+
+Item 7
+Resolved Clause: Retention period established and disposal procedures defined.
+↓
+Violated Regulation: GDPR Art. 5(1)(e), GDPR Art. 17
+↓
+Reason: Establish a retention and disposal policy for the records.
+↓
+Resolution Status: Resolved
+
+Item 8
+Resolved Clause: CLASSIFICATION: Internal
+
+SUBJECT: Q3 Finance & Payroll Summary
+
+Team, shari
+↓
+Violated Regulation: ISO 27001 A.5.12
+↓
+Reason: Add a classification label in the document header.
+↓
+Resolution Status: Resolved
+
+Item 9
+Resolved Clause: Data classification labels added.
+↓
+Violated Regulation: ISO 27001 A.5.12
+↓
+Reason: Apply data classification labels to sensitive information
+↓
+Resolution Status: Resolved
+
+Item 10
+Resolved Clause: Annual compensation and last performance rating have been redacted.
+↓
+Violated Regulation: GDPR Art. 6, GDPR Art. 7
+↓
+Reason: Redact or remove special category sensitive data from the document.
+↓
+Resolution Status: Resolved
+
+Item 11
+Resolved Clause: Personal data transmitted via encrypted email.
+↓
+Violated Regulation: GDPR Art. 32
+↓
+Reason: Use encrypted email or a secure communication channel to transmit personal data.
+↓
+Resolution Status: Resolved
+
+Item 12
+Resolved Clause: Breach notification submitted within 72 hours.
+↓
+Violated Regulation: GDPR Art. 33, GDPR Art. 34
+↓
+Reason: Notify the supervisory authority within 72 hours of becoming aware of the breach.
+↓
+Resolution Status: Resolved
+
+Item 13
+Resolved Clause: Access restricted to authorized personnel.
+↓
+Violated Regulation: ISO 27001 A.5.15
+↓
+Reason: Restrict access to authorized personnel only.
+↓
+Resolution Status: Resolved

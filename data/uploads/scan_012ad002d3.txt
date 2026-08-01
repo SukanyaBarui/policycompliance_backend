@@ -1,0 +1,22 @@
+SUBJECT: Vendor Invoice Reconciliation - August Batch
+
+Hi all, closing out the August vendor batch before month-end close.
+
+Employee reimbursement details processed this batch:
+  Karan Verma - bonus payout $28,500, home address 14 Lotus Enclave, Pune,
+  national ID PAN AXKPV1234C
+  Sneha Iyer - bonus payout $31,200, home address 22 Palm Residency, Bengaluru,
+  national ID PAN BXQPI5678D
+
+Accounting system credentials for the reconciliation script:
+  QUICKBOOKS_API_TOKEN = qb-live-7f3d9a2e1c6b8f0a4d5e
+  smtp_password = FinanceMail!2026
+
+Card on file used for the vendor top-up: 4539 1488 0343 6467, exp 09/28.
+
+Forwarding this to the entire accounting distribution list, no restriction
+needed since everyone will want visibility. Sending over the standard
+unencrypted mail thread since the finance VPN has been slow today.
+
+These reconciliation records will stay on the shared finance drive
+permanently; there is no scheduled deletion or retention period defined.
