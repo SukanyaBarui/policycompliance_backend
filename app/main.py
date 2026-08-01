@@ -115,9 +115,25 @@ app.add_middleware(
         "http://localhost:5173",  # Local development
           # Production frontend
     ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origin_regex=r"https://([a-zA-Z0-9-]+--)?iridescent-lollipop-e693d7\.netlify\.app",
+    allow_origins=allowed_origins,
+    # allow_methods=["*"],
+    # allow_headers=["*"],
+    allow_methods=[
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE",
+        "OPTIONS",
+    ],
+    allow_headers=[
+        "Accept",
+        "Content-Type",
+        "Authorization",
+        "Origin",
+        "X-Requested-With",
+    ],
 )
 
 metrics.instrument(app)
